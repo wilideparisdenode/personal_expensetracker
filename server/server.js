@@ -13,7 +13,7 @@ app.use(cors()); // Apply CORS middleware
 app.use(express.json());
 
 // Connect MongoDB
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.mgconnnectionString)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
